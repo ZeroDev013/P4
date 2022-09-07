@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -704,6 +704,10 @@ p {
     margin: auto auto auto auto;
 }
 
+h1 {
+    color: #333333;
+}
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -716,18 +720,13 @@ h3 {
     color: #333333;
 }
 
+h4 {
+    color: #333333;
+}
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333;
-}
-
-h4 {
-    color: #333333;
 }
 
 .icons {

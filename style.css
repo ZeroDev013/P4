@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 #page-loading-blocs-notifaction {
@@ -45,7 +46,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 44px 50px;
 }
 
 .bloc-md {
@@ -91,7 +92,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -198,9 +198,10 @@ a:hover {
     color: rgba(0, 0, 0, .5);
 }
 
-.d-bloc .panel button:hover,
-.l-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
+.d-bloc .panel button:hover
+ {
+    filter: brightness(1.1);
+    color: #FFFFFF;
 }
 
 .l-bloc .icon-round,
@@ -232,6 +233,7 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
+    font-weight: 600;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -321,6 +323,7 @@ a:hover {
     float: right;
     z-index: 1;
     list-style-type: none;
+    padding-bottom: 20px;
 }
 
 .nav > li {
@@ -335,16 +338,18 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: #F3976C;
+    border-radius: 10px;
 }
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    background-color: white;
 }
 
 .navbar-toggle:hover {
-    background: transparent;
+    color: #F3976C;
 }
 
 .navbar-toggle .icon-bar {
@@ -533,17 +538,17 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
+    font-size: 33px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -678,7 +683,8 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .tight-width-whitespace {
@@ -693,7 +699,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -701,9 +706,9 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
-    margin-bottom: 40px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -737,7 +742,7 @@ h4 {
 }
 
 .white {
-    color: #1A1A1A;
+    color:white;
 }
 
 .portfolio-thumb {
@@ -754,7 +759,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -781,11 +786,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #141414;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956;
+    filter: brightness(1.1);
     color: #FFFFFF;
 }
 
@@ -825,7 +831,35 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.avif");
 }
+.col-sm-3{
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    width: 12%;
+}
 
+.col-sm-4{
+    text-align: center;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 5px;
+    width: 95%;
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -847,6 +881,7 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%;
     }
+    
 }
 
 @media (max-width: 991px) {
@@ -894,7 +929,6 @@ h4 {
     }
     .navbar .nav {
         padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
         float: none;
     }
     .navbar.row {
@@ -909,15 +943,11 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
-    }
+    
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px;
@@ -964,7 +994,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 57px 0;
     }
     .bloc-sm,
     .bloc-md {
@@ -1018,9 +1048,13 @@ h4 {
         padding-right: 0;
     }
 }
-
+@media (max-width: 590px) {
+    .col-sm-3{
+        width: 20%;
+    }
+}
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
-    }
+    }  
 }

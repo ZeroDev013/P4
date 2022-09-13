@@ -43,6 +43,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    
 }
 
 .bloc-lg {
@@ -93,7 +94,7 @@ a:hover {
 
 .texture-paper::before {
     background-size: 280px 280px;
-    background: url("img/texture-paper.png");
+    background: url("/img/texture-paper.png");
 }
 
 .b-parallax {
@@ -818,15 +819,15 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("/img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("/img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.avif");
+    background-image: url("/img/agence-la-panthere.avif");
 }
 
 .bg-presentation {
@@ -834,8 +835,6 @@ h4 {
 }
 .col-sm-3{
     border-radius: 15px;
-    padding: 5px;
-    margin: 5px;
     width: 12%;
 }
 
@@ -854,11 +853,10 @@ ul{
     align-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 5px;
     width: 95%;
 }
 a{
-    padding: 15px;
+    padding: 7px;
     text-decoration: none;
 }
 .citation{

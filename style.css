@@ -860,6 +860,9 @@ a{
     padding: 15px;
     text-decoration: none;
 }
+label{
+    color: black;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;

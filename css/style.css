@@ -831,7 +831,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.avif");
+    background-image: url("/img/image-de-presentation.avif");
 }
 .col-sm-3{
     border-radius: 15px;
